@@ -16,14 +16,14 @@ sed -i '' '/#import "YGLayout.h"/d' $yogaFilename
 sed -i '' '/#import "YGNodePrint.h"/d' $yogaFilename
 sed -i '' '/#import "YGStyle.h"/d' $yogaFilename
 sed -i '' '/#import "YGNode.h"/d' $yogaFilename
-cd $PROJECT_ROOT
+cd "$PROJECT_ROOT"
 
 # https://github.com/facebook/react-native/issues/13198
 cd Pods/React/Libraries/NativeAnimation
 reactFileName="RCTNativeAnimatedNodesManager.h"
 chmod +w $reactFileName
 sed -i '' 's/#import <RCTAnimation\/RCTValueAnimatedNode.h>/#import "RCTValueAnimatedNode.h"/' $reactFileName
-cd $PROJECT_ROOT
+cd "$PROJECT_ROOT"
 
 # https://github.com/facebook/react-native/issues/16039
 cd Pods/React/Libraries/WebSocket
