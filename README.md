@@ -1,2 +1,2 @@
 # tfs-react-native
-This library includes react native versions used by [24]7. 
+This repository contains react native and related dependencies used by [24]7.ai's proprietary iOS and Android SDK. 
