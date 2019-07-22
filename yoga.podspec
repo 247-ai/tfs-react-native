@@ -3,8 +3,7 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-#package = JSON.parse(File.read(File.expand_path('../../package.json', __dir__)))
-package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/react-0.59/package.json').read
+package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/react-0.59.10/package.json').read
 version = package['version']
 
 source = { :git => ENV['INSTALL_YOGA_FROM_LOCATION'] || 'https://github.com/facebook/react-native.git' }

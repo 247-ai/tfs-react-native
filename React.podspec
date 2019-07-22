@@ -5,9 +5,7 @@
 # LICENSE file in the root directory of this source tree.
 
 require "json"
-
-#package = JSON.parse(File.read(File.join(__dir__, "package.json")))
-package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/react-0.59/package.json').read
+package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/react-0.59.10/package.json').read
 version = package['version']
 
 source = { :git => 'https://github.com/facebook/react-native.git' }
