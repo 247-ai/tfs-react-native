@@ -1,6 +1,6 @@
 require 'json'
 
-package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/master-0.61.5/package.json').read
+package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/master-0.61.5/%40react-native-community/netinfo/package.json').read
 
 Pod::Spec.new do |s|
   s.name         = "react-native-netinfo"
