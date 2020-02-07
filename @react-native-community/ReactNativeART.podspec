@@ -6,7 +6,7 @@
 
 require "json"
 
-package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+package = JSON.parse open('https://raw.githubusercontent.com/247-ai/tfs-react-native/master-0.61.5/package.json').read
 
 Pod::Spec.new do |s|
   s.name                   = "ReactNativeART"
